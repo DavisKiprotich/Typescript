@@ -10,3 +10,26 @@ function toLower(val: string){
 }
 toLower("MAMBET")
 console.log(toLower("HI"))
+
+// function getVal(val: number){
+//     if(val > 5){
+//         return true
+//     }
+//     return "WAYA"
+// }
+
+
+
+let kwanet = ["Kiptoyo","Mambet","Kale"]
+
+kwanet.map(chemosi =>{
+    return `chemosi is ${chemosi}`   
+})
+
+function consoleError(msgerr: string): void{
+    console.log(msgerr)
+}
+
+function handleError(msgerr: string): never{
+     throw new Error(msgerr);
+}
