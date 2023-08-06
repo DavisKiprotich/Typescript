@@ -11,5 +11,14 @@ function createAnswer():{}{   //First curly describes if param are string, numbe
     return {}
 }
 
+// we can use type as an alias
+type User ={
+    name: string,
+    email: string,
+    isActive: boolean;
+}
+
+function createUser(user: User){}
+createUser({name: "", email: "", isActive: true})
 
 export{}
