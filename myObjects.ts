@@ -21,4 +21,31 @@ type User ={
 function createUser(user: User){}
 createUser({name: "", email: "", isActive: true})
 
+//readonly keyword does not allow changes in value
+type User ={
+    readonly name: string,
+    email: string,
+    isActive: boolean,
+    credcarddetails ?: number // When question mark is added along gives it as an option
+}
+
+let myUser: user = {
+    name: "",
+    email: "afgh@h.com",
+    isActive: true
+}
+myUser.email = "sdg@gmail.com"
+
+type cardNumber = {
+    cardNumber: string
+}
+type cardDate = {
+    cardDate: number
+}
+type cardDetails = cardDate & cardNumber & {
+    cvv: boolean
+}
+
+
+
 export{}
