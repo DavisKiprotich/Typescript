@@ -11,7 +11,7 @@ function createAnswer():{}{   //First curly describes if param are string, numbe
     return {}
 }
 
-// we can use type as an alias
+// we can use type alias
 type User ={
     name: string,
     email: string,
