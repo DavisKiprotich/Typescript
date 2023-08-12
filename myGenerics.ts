@@ -35,5 +35,40 @@ const getMorePar = <T>(param: T[]): T =>{
     const myIndex = 45
     return param[myIndex]
 }
+interface Db {
+    connection: string,
+    user: string,
+    id: number
+}
+
+function getMorParameter<T, U extends number | string>(val1: T, val2:U):object{
+    return{
+        val1,
+        val2
+    }
+}
+getMorParameter(3, "5")
+
+interface Quiz{
+    name: string,
+    type: string
+}
+interface Course{
+    name: string,
+    author: string,
+    subject: string
+}
+
+class sellable<T>{
+    public cart: T[] = []
+
+    addToCart(product: T){
+        this.cart.push(product)
+    }
+}
+
+
+
+export{}
 
 export{}
